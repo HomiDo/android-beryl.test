@@ -1,10 +1,10 @@
 package org.beryl.test.android.app;
 
+import junit.framework.TestCase;
+
 import org.beryl.app.AndroidVersion;
 
-import android.test.AndroidTestCase;
-
-public class AndroidVersionTest extends AndroidTestCase {
+public class AndroidVersionTest extends TestCase {
 
 	public AndroidVersionTest() {
 		super();

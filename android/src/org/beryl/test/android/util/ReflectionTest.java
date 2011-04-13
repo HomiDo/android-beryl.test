@@ -3,11 +3,11 @@ package org.beryl.test.android.util;
 import java.lang.reflect.Method;
 import java.util.List;
 
+import junit.framework.TestCase;
+
 import org.beryl.util.Reflection;
 
-import android.test.AndroidTestCase;
-
-public class ReflectionTest extends AndroidTestCase {
+public class ReflectionTest extends TestCase {
 
 	public void test_findMethod_Object_HashCode() {
 		Method method = tryFindDeclaredMethod(Object.class, "hashCode", null);

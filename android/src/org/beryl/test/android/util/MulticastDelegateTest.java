@@ -1,10 +1,11 @@
 package org.beryl.test.android.util;
 
+import junit.framework.TestCase;
+
 import org.beryl.util.MulticastDelegate;
+import org.beryl.util.WrappedException;
 
-import android.test.AndroidTestCase;
-
-public class MulticastDelegateTest extends AndroidTestCase {
+public class MulticastDelegateTest extends TestCase {
 
 	public void testConstructor() {
 		MulticastDelegate delegate = new MulticastDelegate();
@@ -17,7 +18,8 @@ public class MulticastDelegateTest extends AndroidTestCase {
 		try {
 			delegate.invoke(ZeroParametersTester.class, "onZeroParameters");
 			fail("onZeroParameters was not invoked.");
-		} catch(InvokedIndicator indicator) {
+		} catch(WrappedException wrapped) {
+			InvokedIndicator indicator = (InvokedIndicator)WrappedException.unwrap(wrapped);
 			indicator.check(ZeroParametersTester.class, 1);
 		}
 	}
