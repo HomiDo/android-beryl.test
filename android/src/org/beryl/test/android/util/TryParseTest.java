@@ -186,6 +186,9 @@ public class TryParseTest extends TestCase {
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 	
+	
+	// Android Bug Report:
+	// http://code.google.com/p/android/issues/detail?id=16411
 	public void test_toBoolean_fromJson_invalidValueReturnsDefaultValue() throws JSONException {
 		boolean expectedValue = true;
 		boolean actualValue = TryParse.toBoolean(new JSONObject(String.format(JSON_SINGLE_PATTERN, "\"garbage\"")),
