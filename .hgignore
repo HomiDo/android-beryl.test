@@ -4,13 +4,13 @@ syntax: glob
 *.apk
 
 syntax: regexp
-bin\\*
-jars\\*
-jar-sources\\*
-javadoc\\*
-obj\\*
-obf\\*
-gen\\*
-log\\*
-.svn\\*
-.metadata\\*
+^android\bin\\*
+^android\jars\\*
+^android\jar-sources\\*
+^android\javadoc\\*
+^android\obj\\*
+^android\obf\\*
+^android\gen\\*
+^android\log\\*
+^.svn\\*
+^.metadata\\*

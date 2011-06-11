@@ -38,4 +38,29 @@ public class AndroidVersionTest extends TestCase {
 		assertEquals(AndroidVersion.getSdkVersion() >= android.os.Build.VERSION_CODES.HONEYCOMB,
 				AndroidVersion.isHoneycombOrHigher());
 	}
+	
+	public void testBeforeDonut() {
+		assertEquals(AndroidVersion.getSdkVersion() < android.os.Build.VERSION_CODES.DONUT,
+				AndroidVersion.isBeforeDonut());
+	}
+	
+	public void testBeforeEclair() {
+		assertEquals(AndroidVersion.getSdkVersion() < android.os.Build.VERSION_CODES.ECLAIR,
+				AndroidVersion.isBeforeEclair());
+	}
+	
+	public void testBeforeFroyo() {
+		assertEquals(AndroidVersion.getSdkVersion() < android.os.Build.VERSION_CODES.FROYO,
+				AndroidVersion.isBeforeFroyo());
+	}
+	
+	public void testBeforeGingerbread() {
+		assertEquals(AndroidVersion.getSdkVersion() < android.os.Build.VERSION_CODES.GINGERBREAD,
+				AndroidVersion.isBeforeGingerbread());
+	}
+	
+	public void testBeforeHoneycomb() {
+		assertEquals(AndroidVersion.getSdkVersion() < android.os.Build.VERSION_CODES.HONEYCOMB,
+				AndroidVersion.isBeforeHoneycomb());
+	}
 }
