@@ -3,15 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-content"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-core"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-database"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-intents"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-location"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-web"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-webapis"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-webcache"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-widget"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/beryl-deployment"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/beryl"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/beryl-ext"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/beryl-experimental"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
