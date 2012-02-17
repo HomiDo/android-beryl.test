@@ -23,7 +23,7 @@ public class ReferenceCounterTest extends TestCase {
 		RunnableCheck c = new RunnableCheck();
 		final ReferenceCounter rc = new ReferenceCounter(c);
 		rc.down();
-		assertEquals(0, c.timesRun);
+		assertEquals(1, c.timesRun);
 	}
 	
 	public void testUpOnly() {

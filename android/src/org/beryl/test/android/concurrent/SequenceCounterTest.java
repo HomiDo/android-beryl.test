@@ -18,7 +18,7 @@ public class SequenceCounterTest extends TestCase {
 	
 	public void testNextIncrementsCounter() {
 		SequenceCounter sc = new SequenceCounter();
-		assertEquals(1, sc.next());
+		assertEquals(0, sc.next());
 		assertEquals(1, sc.peek());
 	}
 	
@@ -34,7 +34,7 @@ public class SequenceCounterTest extends TestCase {
 		assertEquals(20, sc.peek());
 		sc.set(40);
 		assertEquals(40, sc.peek());
-		assertEquals(41, sc.next());
+		assertEquals(40, sc.next());
 		assertEquals(41, sc.peek());
 	}
 }
