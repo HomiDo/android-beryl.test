@@ -1,6 +1,6 @@
 package org.beryl.test.android.caching;
 
-import org.beryl.caching.CachedItem;
+import org.beryl.cache.CachedItem;
 
 import junit.framework.TestCase;
 

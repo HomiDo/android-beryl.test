@@ -45,4 +45,24 @@ public class ReflectionTest extends TestCase {
 		
 		return result;
 	}
+	
+	private static interface TestInterface {}
+	private static interface AlternateInterface {}
+	private static class TestClass implements TestInterface {}
+	private static class AggregateClass extends TestClass implements AlternateInterface {}
+	
+	public void test_getAllInterfaces_Object() {
+		Class<?>[] ifaces = Reflection.getAllInterfaces(Object.class);
+		assertEquals(0, ifaces.length);
+	}
+	
+	public void test_getAllInterfaces_TestClassHasTestInterface() {
+		Class<?>[] ifaces = Reflection.getAllInterfaces(TestClass.class);
+		assertEquals(1, ifaces.length);
+	}
+	
+	public void test_getAllInterfaces_AggregateClassHasBothInterfaces() {
+		Class<?>[] ifaces = Reflection.getAllInterfaces(AggregateClass.class);
+		assertEquals(2, ifaces.length);
+	}
 }
